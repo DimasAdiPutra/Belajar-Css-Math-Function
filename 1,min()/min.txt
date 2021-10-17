@@ -1,0 +1,12 @@
+function min() pada css berfungsi untuk memberikan nilai maksimal untuk sebuah element.
+
+contoh sintaks:
+
+min(50vw, 200px);
+
+min() function akan mengambil nilai terkecil yang diberikan oleh user sebagai nilai maksimal dari sebuah website. misal kita beranggapan bahwa viewport yang kita miliki adalah 600px, jadi 50vw = 300px, maka nilai maksimal untuk element yang kita berikan adalah 200px karena min() mengambil nilai terkecil termasuk yang negatif.
+jadi, jika wiewport yang kita miliki lebih kecil dari 400px / 50vw = 200px maka nilai itu yang akan diambil.
+
+Kita bisa memberikan nilai attr() untuk valuenya, atau kita bisa memberikan nilai <lenght> yang valid seperti vh, vw, px, pc, rem, em, dll. Kita bisa memberikan unit yang berbeda untuk setiap nilainya.
+
+min() function bisa dilakukan secara bersarang, bahkan dengan function lain seperti max(), clamp(), atau calc().

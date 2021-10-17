@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>min() functions</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .kotak {
+      background-color: salmon;
+
+      /* width: 500px;
+      height: 500px; */
+      /* jika kita memberikan nilai absolute seperti diatas, maka lebar dan tingginya akan tetap 500px tidak peduli berapa lebar browsernya */
+      /* untuk memberikan nilai yang responsif kita bisa memberikan nilai menggunakan percentage value atau viewport value, atau unit lain yang reponsif */
+      /* width: 100vw;
+      height: 100vw; */
+      /* maka nilainya akan menjadi responsif */
+      /* tapi dengan begitu kotak yang kita miliki akan menjadi terlalu besar, kita inginnya kotak ini berhenti membesar saat mencapai lebar dan tinggi tertentu */
+      /* kita bisa menggunakan max-width dan max-height */
+      /* width: 100vw;
+      max-width: 600px;
+      height: 100vw;
+      max-height: 600px; */
+      /* dengan begini saat lebar dan tingginya mencapai 600px, kotak akan berhenti membesar */
+      /* kita bisa menggunakan min() function untuk menulis code diatas menjadi lebih clean dan simple */
+      /* width: min(nilai_responsifnya, nilai_maksnya); */
+      /* atau sebaliknya */
+      width: min(100vw, 600px);
+      height: min(100vw, 600px);
+      /* min() functions ini berfungsi untuk mengambil nilai terkecil yang kita berikan sebagai valuenya, dan itu berfungsi untuk mengatur lebar maksimalnya jika kita memberikan nilai absolute di salah satu nilainya */
+      /* sebenarnya min() function ini bisa diberikan lebih dari 2 nilai, dan fungsinya pun tetap sama, yaitu dia akan mencari nilai terkecil yang diberikan */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="kotak"></div>
+</body>
+
+</html>

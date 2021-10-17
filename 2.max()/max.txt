@@ -1,0 +1,12 @@
+function max() pada css berfungsi untuk memberikan nilai minimal untuk sebuah element.
+
+contoh sintaks:
+
+max(5vw, 40px);
+
+max() function akan mengambil nilai terbesar yang diberikan oleh user sebagai nilai minimal dari sebuah website. misal kita beranggapan bahwa viewport yang kita miliki adalah 600px, jadi 5vw = 30px, maka nilai minimal untuk element yang kita berikan adalah 30px karena max() mengambil nilai terkecil termasuk yang negatif.
+jadi, jika viewport yang kita miliki lebih besar dari 40px, element akan berhenti di 40px.
+
+Kita bisa memberikan nilai attr() untuk valuenya, atau kita bisa memberikan nilai <lenght> yang valid seperti vh, vw, px, pc, rem, em, dll. Kita bisa memberikan unit yang berbeda untuk setiap nilainya.
+
+max() function bisa dilakukan secara bersarang, bahkan dengan function lain seperti min(), clamp(), atau calc().

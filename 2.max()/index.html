@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>max() Functions</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      /* font-size: 120px; */
+      /* dengan begini kita memiliki h1 dengan size 120px yang absolute tidak peduli berapapun ukuran browsernya */
+      /* kita bisa membuatnya responsif dengan menggunkan unit responsif seperti vh, vw, dll */
+      /* font-size: 7vw; */
+      /* dengan begini lebarnya akan menjadi lebih reponsif */
+      /* tapi jika kita memperkecil browsernya hingga diukuran mobile, kemungkinan besar sizenya sudah tidak bagus lagi karena terlalu kecil, tidak seperti width dan height yang memiliki min-width dan min-height, font-size tidak memiliki property untuk mengatur ukuran minimalnya */
+      /* dan disinilah max() function berguna untuk memberikan nilai minimalnya */
+      /* font-size: max(nilai_responsifnya, nilai_absolutenya); */
+      font-size: max(7vw, 60px);
+      /* dengan begini setelah sampai di 60px, maka font-sizenya tidak akan mengecil lagi */
+      /* sama seperti min() function, max() function juga bisa diberikan lebih dari 2 nilai */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+</body>
+
+</html>

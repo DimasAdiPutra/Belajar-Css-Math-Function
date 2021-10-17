@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clamp() Function</title>
+
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h1 {
+      /* font-size: 120px; */
+      /* dengan begini kita memiliki h1 dengan size 120px yang absolute tidak peduli berapapun ukuran browsernya */
+      /* kita bisa membuatnya responsif dengan menggunkan unit responsif seperti vh, vw, dll */
+      /* font-size: 7vw; */
+      /* sekarang kita sudah memiliki font-size yang responsif, tapi jika kita melihatnya di viewport yang terlalu kecil, maka font-sizenya akan menjadi terlalu kecil, dan jika kita melihatnya di viewport yang terlalu besar font-sizenya pun akan menjadi terlalu besar, kita tidak bisa mengaturnya seperti dibawah ini untuk memberikan nilai min dan maxnya */
+      /* untuk min */
+      /* font-size: max(7vw, 2rem); */
+      /* untuk max */
+      /* font-size: min(7vw, 5rem); */
+      /* jika kita memberikannya seperti itu nilainya akan menjadi overlapping, atau bertumpuk dan yang dipakai hanya nilai terakhir saja */
+      /* karena itu dibutuhkan clamp() function */
+      font-size: clamp(2rem, 7vw, 5rem);
+      /* dengan begini kita memberikan nilai minimalnya 2rem dan nilai maksimalnya 5rem */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+</body>
+
+</html>

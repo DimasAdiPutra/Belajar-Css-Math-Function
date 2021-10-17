@@ -1,0 +1,13 @@
+clamp() function berfungsi untuk mengatur nilai minimal dan maksimal dari sebuah element dalam satu baris.
+clamp() function membutuhkan 3 nilai yang harus kita berikan.
+
+clamp(minimal, default, maksimal);
+
+contoh:
+clamp(1.8rem, 2.5vw, 2.8rem)
+
+font-size dari elemen <h1> diatur sebagai clamp(1.8rem, 2.5vw, 2.8rem). Ini berarti bahwa font-size akan ditetapkan pada 1.8rem, 2.5% dari nilai viewport-widthnya menjadi lebih besar dari 1.8rem. Pada titik ini, font-size akan ditetapkan pada 2.5vw, sampai 2.5% dari nilai viewport-width menjadi lebih besar dari 2.8rem. Pada titik ini, font-size akan ditetapkan pada 2.8rem. clamp() memungkinkan kita untuk menetapkan nilai minimum dan maksimum.
+
+Kita bisa memberikan nilai attr() untuk valuenya, atau kita bisa memberikan nilai <lenght> yang valid seperti vh, vw, px, pc, rem, em, dll. Kita bisa memberikan unit yang berbeda untuk setiap nilainya.
+
+clamp() function bisa dilakukan secara bersarang, bahkan dengan function lain seperti min(), max(), atau calc().
